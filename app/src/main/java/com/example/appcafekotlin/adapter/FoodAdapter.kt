@@ -18,7 +18,7 @@ class FoodAdapter(private val context: Context, private val foodList: MutableLis
     override fun getItemCount() = foodList.size
 
     override fun onBindViewHolder(holder: FoodViewHolder, position: Int) {
-        holder.imgFood.setBackgroundResource(foodList[position].imagemProduto!!)
+        holder.imgFood.setImageResource(foodList[position].imagemProduto!!)
         holder.nomeProduto.text = foodList[position].nomeProduto
         holder.valorProduto.text = foodList[position].precoProduto
     }
